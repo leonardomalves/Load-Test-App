@@ -1,0 +1,16 @@
+URL;Start Time;End Time;Response Time;Latency;Status Code
+https://8322cbcz5p.us-east-2.awsapprunner.com/v1/transactions;2023-12-07T17:55:17.419Z;2023-12-07T17:55:20.171Z;2.75s;2.75s;201
+https://8322cbcz5p.us-east-2.awsapprunner.com/v1/transactions;2023-12-07T17:55:17.417Z;2023-12-07T17:55:20.665Z;3.25s;3.25s;201
+https://8322cbcz5p.us-east-2.awsapprunner.com/v1/transactions;2023-12-07T17:55:17.422Z;2023-12-07T17:55:20.673Z;3.25s;3.25s;201
+https://8322cbcz5p.us-east-2.awsapprunner.com/v1/transactions;2023-12-07T17:55:17.393Z;2023-12-07T17:55:20.681Z;3.29s;3.29s;201
+https://8322cbcz5p.us-east-2.awsapprunner.com/v1/transactions;2023-12-07T17:55:17.418Z;2023-12-07T17:55:20.683Z;3.27s;3.27s;201
+https://8322cbcz5p.us-east-2.awsapprunner.com/v1/transactions;2023-12-07T17:55:17.423Z;2023-12-07T17:55:20.712Z;3.29s;3.29s;201
+https://8322cbcz5p.us-east-2.awsapprunner.com/v1/transactions;2023-12-07T17:55:17.425Z;2023-12-07T17:55:20.787Z;3.36s;3.36s;201
+https://8322cbcz5p.us-east-2.awsapprunner.com/v1/transactions;2023-12-07T17:55:17.426Z;2023-12-07T17:55:20.791Z;3.37s;3.37s;201
+https://8322cbcz5p.us-east-2.awsapprunner.com/v1/transactions;2023-12-07T17:55:17.424Z;2023-12-07T17:55:20.792Z;3.37s;3.37s;201
+https://8322cbcz5p.us-east-2.awsapprunner.com/v1/transactions;2023-12-07T17:55:17.423Z;2023-12-07T17:55:20.796Z;3.37s;3.37s;201
+https://8322cbcz5p.us-east-2.awsapprunner.com/v1/transactions;2023-12-07T17:55:17.426Z;2023-12-07T17:55:20.800Z;3.37s;3.37s;201
+https://8322cbcz5p.us-east-2.awsapprunner.com/v1/transactions;2023-12-07T17:55:17.420Z;2023-12-07T17:55:20.802Z;3.38s;3.38s;201
+https://8322cbcz5p.us-east-2.awsapprunner.com/v1/transactions;2023-12-07T17:55:17.421Z;2023-12-07T17:55:20.818Z;3.40s;3.40s;201
+https://8322cbcz5p.us-east-2.awsapprunner.com/v1/transactions;2023-12-07T17:55:17.427Z;2023-12-07T17:55:20.820Z;3.39s;3.39s;201
+https://8322cbcz5p.us-east-2.awsapprunner.com/v1/transactions;2023-12-07T17:55:17.420Z;2023-12-07T17:55:20.870Z;3.45s;3.45s;201
