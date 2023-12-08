@@ -4,15 +4,37 @@ import { RequestsService } from './requests.service';
 
 @Controller('requests')
 export class RequestsController {
-  constructor(private readonly requestsService: RequestsService) {}
+  constructor(private readonly requestsService: RequestsService) {
+  }
 
   @Post()
-  async sendRequests(@Body() requestBody: { url: string; headers: Record<string, string>; payload: any }): Promise<{ totalSuccess: number; totalFailures: number; totalTimeSeconds: number; averageTimeSeconds: number; totalTimePerRequestSeconds: number }> {
-    const { totalSuccess, totalFailures, totalTime, averageTime, totalTimePerRequest } = await this.requestsService.sendRequests(
-      15,
+  async sendRequests(@Body() requestBody: {
+    url: string;
+    headers: Record<string, string>;
+    payload: any,
+    totalRequest: number,
+    delayBetweenRequests: number,
+    batchSize: number,
+  }): Promise<{
+    totalSuccess: number;
+    totalFailures: number;
+    totalTimeSeconds: number;
+    averageTimeSeconds: number;
+    totalTimePerRequestSeconds: number
+  }> {
+    const {
+      totalSuccess,
+      totalFailures,
+      totalTime,
+      averageTime,
+      totalTimePerRequest
+    } = await this.requestsService.sendRequestsInBatches(
+      requestBody.totalRequest,
+      requestBody.batchSize,
       requestBody.url,
       requestBody.headers,
-      requestBody.payload
+      requestBody.payload,
+      requestBody.delayBetweenRequests
     );
 
     // @ts-ignore
@@ -22,7 +44,6 @@ export class RequestsController {
     // @ts-ignore
     const totalTimePerRequestSeconds: number = totalTimePerRequest !== undefined ? totalTimePerRequest / 1000 : 0; // Tempo total por requisição em segundos
 
-    // Log das métricas ou manipulação conforme necessário
     console.log('Total Success:', totalSuccess);
     console.log('Total Failures:', totalFailures);
     console.log('Total Time (seconds):', totalTimeSeconds);
